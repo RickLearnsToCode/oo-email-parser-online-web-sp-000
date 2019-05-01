@@ -24,7 +24,7 @@ arr = @@email_list.split(/,\s|\s/)
 #   arr = @@email_list.split(" ")
 # end
 
-arr.uniq 
+arr.uniq
 end
 
 
