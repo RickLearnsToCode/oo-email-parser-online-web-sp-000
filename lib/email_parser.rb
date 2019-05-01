@@ -17,7 +17,7 @@ arr = []
 # binding.pry
 arr = @@email_list.split(/,\s|\s/)
 
-# 
+#
 # if @@email_list.include?(",")
 #   arr = @@email_list.split(","||" ").collect{|i| i.strip}
 # else
