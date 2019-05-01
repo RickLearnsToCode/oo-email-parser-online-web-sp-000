@@ -15,11 +15,14 @@ def parse
 #Could use Regex but start with test for include(",") first
 arr = []
 # binding.pry
-if @@email_list.include?(",")
-  arr = @@email_list.split(","||" ").collect{|i| i.strip}
-else
-  arr = @@email_list.split(" ")
-end
+arr = @@email_list.split(/,\s|\s/)
+
+# 
+# if @@email_list.include?(",")
+#   arr = @@email_list.split(","||" ").collect{|i| i.strip}
+# else
+#   arr = @@email_list.split(" ")
+# end
 arr
 end
 
