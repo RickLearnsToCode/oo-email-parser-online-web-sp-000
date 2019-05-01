@@ -14,7 +14,7 @@ def parse
 #Take either comma separated list or white space separated list and split as elements of array
 #Could use Regex but start with test for include(",") first
 arr = []
-binding.pry
+# binding.pry
 if @@email_list.include?(",")
   arr = @@email_list.split(",").collect{|i| i.strip}
 else
