@@ -16,7 +16,7 @@ def parse
 arr = []
 # binding.pry
 if @@email_list.include?(",")
-  arr = @@email_list.split(",").collect{|i| i.strip}
+  arr = @@email_list.split(","||" ").collect{|i| i.strip}
 else
   arr = @@email_list.split(" ")
 end
